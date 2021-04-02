@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 2337074158996965286}
   - component: {fileID: 2337074159000356742}
   - component: {fileID: 2337074158999389510}
+  - component: {fileID: 2458489554121961049}
   m_Layer: 0
   m_Name: Carbine
   m_TagString: Untagged
@@ -331,6 +332,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2458489554121961049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074158997199750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b098232801c816e47a233711d5b2ed66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 100
+  damage: 30
+  muzzleFlash: {fileID: 717790555718715606}
+  hitEffect: {fileID: 3439692203937677719, guid: c74444aae7c284240a62c4e59a2141f5, type: 3}
+  ammoSlot: {fileID: 0}
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,5 +688,10 @@ PrefabInstance:
 --- !u!4 &1559287809656057753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
+  m_PrefabInstance: {fileID: 4314024088864725386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &717790555718715606 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
   m_PrefabInstance: {fileID: 4314024088864725386}
   m_PrefabAsset: {fileID: 0}

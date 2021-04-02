@@ -620,11 +620,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5862bbfe91a75054ca72c13b555b6ac5, type: 3}
   m_PrefabInstance: {fileID: 407678273}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &470826957 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1478310501156909227, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  m_PrefabInstance: {fileID: 2026591589}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &471120495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1022,29 +1017,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &724921238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4403655893771920379, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  m_PrefabInstance: {fileID: 2026591589}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &724921242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 724921238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b098232801c816e47a233711d5b2ed66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPCamera: {fileID: 1255955950}
-  range: 100
-  damage: 30
-  muzzleFlash: {fileID: 470826957}
-  hitEffect: {fileID: 3439692203937677719, guid: c74444aae7c284240a62c4e59a2141f5, type: 3}
-  ammoSlot: {fileID: 1776320493}
 --- !u!1 &752117299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,17 +3174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c9795a96c094f4cbde4d65546aa9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1776320493 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8833447458711944285, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  m_PrefabInstance: {fileID: 2026591589}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5802ac40bef41384e94c036276a927d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1787576429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,6 +3715,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 889962172894802732, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3133026205543257997, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: gameOverCanvas
       value: 
@@ -3765,6 +3730,10 @@ PrefabInstance:
     - target: {fileID: 4403655893771829211, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.434
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403655893771920379, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4406771590940619398, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: hp
