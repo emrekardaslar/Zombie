@@ -77,7 +77,15 @@ public class EnemyAI : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("attack", false);
         GetComponent<Animator>().SetTrigger("move");
-        navMeshAgent.SetDestination(target.position);
+        try
+        {
+            navMeshAgent.SetDestination(target.position);
+        }
+        catch (Exception err)
+        {
+            Debug.Log("Exception catched: " + err);
+            return;
+        }
     }
 
     private void OnDrawGizmos()
