@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 8833447458711944285}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,7 +342,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5802ac40bef41384e94c036276a927d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 5
 --- !u!1 &6277332583513724687
 GameObject:
   m_ObjectHideFlags: 0
