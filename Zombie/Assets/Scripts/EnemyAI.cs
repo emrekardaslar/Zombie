@@ -83,6 +83,7 @@ public class EnemyAI : MonoBehaviour
         }
         catch (Exception err)
         {
+            //Not working
             Debug.Log("Exception catched: " + err);
             return;
         }
