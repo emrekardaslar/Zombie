@@ -11,18 +11,13 @@ public class EnemyAttack : MonoBehaviour
         target = FindObjectOfType<PlayerHealth>();
     }
 
-    public void OnDamageTaken()
-    {
-        //Debug.Log(name + "I also know we took damage");
-    }
-
     public void AttackHitEvent()
     {
         if (target == null) return;
         if (Vector3.Distance(transform.position, target.transform.position) < 2)
         {
             target.TakeDamage(damage);
+            target.GetComponent<DisplayDamage>().ShowDamageImpact();
         }
-        //target.TakeDamage(damage);
     }
 }
